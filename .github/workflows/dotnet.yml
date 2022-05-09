@@ -23,7 +23,7 @@ jobs:
     - name: Upload Releases
       uses: softprops/action-gh-release@v1
       with:
-        files: D:\a\PrayerTimesAPI\PrayerTimesAPI\bin\Release\net6.0-windows10.0.19041.0\API.dll
+        files: D:\a\PrayerTimesAPI\PrayerTimesAPI\bin\Release\net6.0-windows10.0.19041.0\*.dll
         name: PrayerAPI Auto-Build
         tag_name: "${{ steps.date.outputs.today }}--Windows-10"
         token: ${{ secrets.TEST }}
