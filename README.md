@@ -32,5 +32,8 @@ Thread.Sleep(-1);
 
 # TODO
 
-Add Support For Other Methods
+~~Add Support For Other Methods~~
+
+~~Add a method to get the times for just today~~
+
 Add Support For Other Timezones
