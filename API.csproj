@@ -12,12 +12,15 @@
 
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
+      <CopyLocal>true</CopyLocal>
       <HintPath>libs\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Windows.SDK.NET">
+      <CopyLocal>true</CopyLocal>
       <HintPath>libs\Microsoft.Windows.SDK.NET.dll</HintPath>
     </Reference>
     <Reference Include="WinRT.Runtime">
+      <CopyLocal>true</CopyLocal>
       <HintPath>libs\WinRT.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
