@@ -1,6 +1,6 @@
 # PrayerTimesAPI
 
-This is based off the work of (these people)[https://github.com/prayertimeresearch] so jazakallahu khaiyran to them
+This is based off the work of [these people](https://github.com/prayertimeresearch) so jazakallahu khaiyran to them
 
 Right now it only supprts the london time zone if anyone can help me put it to other timezones it'll be appreciated
 
