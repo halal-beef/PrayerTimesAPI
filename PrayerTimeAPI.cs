@@ -11,7 +11,7 @@
 
             Geolocator locator = new();
             GeolocationAccessStatus status = Geolocator.RequestAccessAsync().GetAwaiter().GetResult();
-            if (status == GeolocationAccessStatus.Allowed)
+            if (status == GeolocationAccessStatus.Allowed) //Mashallah
             {
                 Geoposition pos = locator.GetGeopositionAsync().GetAwaiter().GetResult();
                 Uri allprayertimes = new Uri($@"https://www.moonsighting.com/time_json.php?year={DateTime.Now.Year}&tz=Europe/London&lat={pos.Coordinate.Latitude}&lon={pos.Coordinate.Longitude}&method=0&both=false&time=0");
