@@ -19,15 +19,11 @@ jobs:
         dotnet-version: 6.0.x
     - name: Build
       id: date
-      run: dotnet build -c Release && echo "::set-output name=today::$(date +"%d-%m-%y--%H-%M-%S")"
+      run: dotnet install package Costura.Fody && dotnet build -c Release && echo "::set-output name=today::$(date +"%d-%m-%y--%H-%M-%S")"
     - name: Upload Releases
       uses: softprops/action-gh-release@v1
       with:
-        files: |
-            D:\a\PrayerTimesAPI\PrayerTimesAPI\bin\Release\net6.0-windows10.0.19041.0\API.dll
-            D:\a\PrayerTimesAPI\PrayerTimesAPI\libs\Microsoft.Windows.SDK.NET.dll
-            D:\a\PrayerTimesAPI\PrayerTimesAPI\libs\Newtonsoft.Json.dll
-            D:\a\PrayerTimesAPI\PrayerTimesAPI\libs\WinRT.Runtime.dll
+        files: D:\a\PrayerTimesAPI\PrayerTimesAPI\bin\Release\net6.0-windows10.0.19041.0\API.dll
         name: PrayerAPI Auto-Build
         tag_name: "${{ steps.date.outputs.today }}--Windows-10"
         token: ${{ secrets.TEST }}
