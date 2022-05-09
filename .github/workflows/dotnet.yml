@@ -20,4 +20,10 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore -c Release
+    - name: Upload Releases
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+            D:\a\PrayerTimesAPI\PrayerTimesAPI\bin\Release\net6.0-windows10.0.19041.0\API.dll
+            D:\a\PrayerTimesAPI\PrayerTimesAPI\libs\*
