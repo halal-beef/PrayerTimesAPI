@@ -19,7 +19,7 @@ jobs:
         dotnet-version: 6.0.x
     - name: Build
       id: date
-      run: dotnet build --no-restore -c Release && echo "::set-output name=today::$(date +"%d-%m-%y--%H-%M-%S")"
+      run: dotnet build -c Release && echo "::set-output name=today::$(date +"%d-%m-%y--%H-%M-%S")"
     - name: Upload Releases
       uses: softprops/action-gh-release@v1
       with:
