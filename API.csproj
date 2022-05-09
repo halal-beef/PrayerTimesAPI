@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
   </ItemGroup>
 
   <ItemGroup>
