@@ -31,4 +31,4 @@ jobs:
         name: PrayerAPI Auto-Build
         tag_name: "${{ steps.date.outputs.today }}--Windows-10"
         env:
-        GITHUB_TOKEN: ${{ secrets.TEST }}
+        token: ${{ secrets.TEST }}
