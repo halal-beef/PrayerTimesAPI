@@ -4,6 +4,10 @@ This is based off the work of [these people](https://github.com/prayertimeresear
 
 Right now it only supprts the london time zone if anyone can help me put it to other timezones it'll be appreciated
 
+# NOTICE
+
+You need to reference **all** dll files from the release page or else the api go crash crash
+
 # Support Status
 
 Windows 10 **Strictly** This is because of the location API I used from Microsoft
