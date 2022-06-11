@@ -44,3 +44,5 @@ Thread.Sleep(-1);
 ~~Add a method to get the times for just today~~
 
 Add Support For Other Timezones
+
+Idk man
