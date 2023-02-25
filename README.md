@@ -1,3 +1,7 @@
+# UPDATE OF 25/2/23
+
+This has been discontinued in favour of a (complete rewrite of PrayerTimesAPI)[https://github.com/halal-beef/PrayerTimesAPIV2/]
+
 # PrayerTimesAPI
 
 This is based off the work of [these people](https://github.com/prayertimeresearch) so jazakallahu khaiyran to them
